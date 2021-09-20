@@ -8,6 +8,7 @@ import random
 from words import guess_word_list
 import string
 
+
 def pull_the_word(guess_word_list):
 
     """
@@ -16,18 +17,15 @@ def pull_the_word(guess_word_list):
     word = random.choice(guess_word_list)
     return word.upper()
 
-def hangman():
-
 word = pull_the_word(guess_word_list)
 letters_in_word = set(word)
 alphabet = set(string.ascii_uppercase)
 used_letters = set()
 
+
 def get_user_letter_input():
+
     lives = 6
-
-
-    # gets user input
     while len(letters_in_word) > 0 and lives > 0:
         '''
         Shows the letters that user has used
@@ -35,8 +33,6 @@ def get_user_letter_input():
         '''
         print("\nYou have", lives, "lives remaining")
         print("You have used these letters ", " ".join(used_letters))
-        
-
         # shows what stage the word is in
         word_stage = [
             letter if letter in used_letters else "_" for letter in word
@@ -63,7 +59,6 @@ def get_user_letter_input():
     check_lives(lives)
 
 
-
 def check_lives(lives):
 
     if lives == 0:
@@ -75,6 +70,7 @@ print("* * * * * * * * * * * * *")
 print("Lets play guess the word!!")
 print("Are you ready?")
 print("* * * * * * * * * * * * *")
+
 
 def main():
     get_user_letter_input()
