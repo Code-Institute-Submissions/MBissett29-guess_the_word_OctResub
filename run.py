@@ -56,7 +56,7 @@ used_letters = set()
         else:
             print("Invalid character please use a letter")
 
-        print("Current guesses ", " ".join(word_stage))
+def check_lives(lives):
 
     if lives == 0:
         print("Game over! Better luck next time.")
