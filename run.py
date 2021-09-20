@@ -77,7 +77,7 @@ print("Are you ready?")
 print("* * * * * * * * * * * * *")
 
 def main():
-    hangman()
+    get_user_letter_input()
     while input("Play Again? (Y/N) ").upper() == "Y":
         hangman()
 
