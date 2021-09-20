@@ -79,6 +79,6 @@ print("* * * * * * * * * * * * *")
 def main():
     get_user_letter_input()
     while input("Play Again? (Y/N) ").upper() == "Y":
-        hangman()
+        get_user_letter_input()
 
 main()
