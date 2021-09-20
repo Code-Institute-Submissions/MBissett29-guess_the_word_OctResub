@@ -24,6 +24,7 @@ def hangman():
     used_letters = set()
     lives = 6
 
+
     # gets user input
     while len(letters_in_word) > 0 and lives > 0:
         '''
