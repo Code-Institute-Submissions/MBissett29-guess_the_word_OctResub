@@ -58,6 +58,12 @@ def get_user_letter_input():
         else:
             print("Invalid character please use a letter")
 
+        print("Current guesses ", " ".join(word_stage))
+
+    check_lives(lives)
+
+
+
 def check_lives(lives):
 
     if lives == 0:
