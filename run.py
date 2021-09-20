@@ -18,10 +18,10 @@ def pull_the_word(guess_word_list):
 
 def hangman():
 
-    word = pull_the_word(guess_word_list)
-    letters_in_word = set(word)
-    alphabet = set(string.ascii_uppercase)
-    used_letters = set()
+word = pull_the_word(guess_word_list)
+letters_in_word = set(word)
+alphabet = set(string.ascii_uppercase)
+used_letters = set()
     lives = 6
 
 
