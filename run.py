@@ -68,10 +68,6 @@ print("Lets play guess the word!!")
 print("Are you ready?")
 print("* * * * * * * * * * * * *")
 
-
-hangman()
-
-
 def main():
     hangman()
     while input("Play Again? (Y/N) ").upper() == "Y":
