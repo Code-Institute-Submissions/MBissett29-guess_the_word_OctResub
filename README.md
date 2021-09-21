@@ -1,31 +1,22 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Guess the Word
 
-Welcome MBissett29,
+Guess the word is a python terminal game that runs as a mock terminal app provided by Code Institute deployed on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The game is based on the classic Hangman game, however instead of a image of a hangman every time you lose a life it just shows how many lives you have remaining.
 
-## Reminders
+// Input mock design image of terminal app here 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## How to play
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Guess the word is a pretty simple game. It starts off by welcoming the player and asks if they are ready to play.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+It will also show  the player how many lives remaining, so they understands how many guesses they have to beat the game.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The game starts of by showing the random word as spaced out underscores for the letters. This shows the player how long the word is.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The player then has the option of guessing a letter each time by typing a letter into the terminal and hitting the enter key.
 
-Connect your GitHub repository and deploy as normal.
+The game ends either if the player guesses the word and beats the game or the player runs out of lives.
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+The player then has the option of playing again.
