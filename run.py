@@ -34,19 +34,20 @@ def get_user_letter_input():
         print("\nYou have", lives, "lives remaining")
         print("You have used these letters ", " ".join(used_letters))
         # shows what stage the word is in
-        word_stage = [
-            letter if letter in used_letters else "_" for letter in word
-        ]
+        
 
         user_letter = input("Guess a letter: ").upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
+            word_stage = [
+                letter if letter in used_letters else "_" for letter in word
+            ]
             if user_letter in letters_in_word:
                 letters_in_word.remove(user_letter)
-                print("")
             else:
                 lives = lives - 1  # decucts from life points
                 print("\nLetter", user_letter, "is not in the word!")
+            print("Current guesses ", " ".join(word_stage))
 
         elif user_letter in used_letters:
             print("Uh oh you have already used that one! Try another ")
@@ -54,7 +55,6 @@ def get_user_letter_input():
         else:
             print("Invalid character please use a letter")
 
-        print("Current guesses ", " ".join(word_stage))
 
     check_lives(lives)
 
