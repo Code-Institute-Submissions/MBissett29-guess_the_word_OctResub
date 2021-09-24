@@ -17,14 +17,13 @@ def pull_the_word(guess_word_list):
     word = random.choice(guess_word_list)
     return word.upper()
 
-word = pull_the_word(guess_word_list)
-letters_in_word = set(word)
-alphabet = set(string.ascii_uppercase)
-used_letters = set()
-
 
 def get_user_letter_input():
-
+    
+    word = pull_the_word(guess_word_list)
+    letters_in_word = set(word)
+    alphabet = set(string.ascii_uppercase)
+    used_letters = set()
     lives = 6
     while len(letters_in_word) > 0 and lives > 0:
         '''
@@ -33,7 +32,6 @@ def get_user_letter_input():
         '''
         print("\nYou have", lives, "lives remaining")
         print("You have used these letters ", " ".join(used_letters))
-        # shows what stage the word is in
         
 
         user_letter = input("Guess a letter: ").upper()
@@ -71,10 +69,6 @@ print("Lets play guess the word!!")
 print("Are you ready?")
 print("* * * * * * * * * * * * *")
 
-
-def main():
-    get_user_letter_input()
-    while input("Play Again? (Y/N) ").upper() == "Y":
         get_user_letter_input()
 
 main()
