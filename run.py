@@ -61,14 +61,31 @@ def check_lives(lives):
 
     if lives == 0:
         print("Game over! Better luck next time.")
+        play_again()
     else:
         print("Congratulations you won!!!")
+        play_again()
 
-print("* * * * * * * * * * * * *")
-print("Lets play guess the word!!")
-print("Are you ready?")
-print("* * * * * * * * * * * * *")
+def play_again():
+    print("\nPlay Again?")
+    print("Enter Y or hit the Run Program button above.")
+    print("Or hit any other key to stop")
 
+    new_game = input(
+        "Please press y to play again, \nor any other key to quit the game: "
+        )
+
+    if new_game.lower() == "y":
         get_user_letter_input()
+    else:
+        print("Thank you for playing Guess the Word!")
+
+def main():
+    print("* * * * * * * * * * * * *")
+    print("Lets play guess the word!!")
+    print("Are you ready?")
+    print("* * * * * * * * * * * * *")
+    
+    get_user_letter_input()
 
 main()
