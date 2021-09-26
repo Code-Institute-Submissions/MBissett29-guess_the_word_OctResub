@@ -4,6 +4,8 @@ Guess the word is a python terminal game that runs as a mock terminal app provid
 
 The game is based on the classic Hangman game, however instead of a image of a hangman every time you lose a life it just shows how many lives you have remaining.
 
+[Access the live app here](https://g-t-w-game.herokuapp.com/
+)
 ![Guess the Word](assets/images/heroku_app.png)
 
 ## How to play
