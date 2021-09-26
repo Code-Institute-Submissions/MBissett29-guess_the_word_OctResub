@@ -6,7 +6,6 @@ The game is based on the classic Hangman game, however instead of a image of a h
 
 ![Guess the Word](assets/images/heroku_app.png)
 
-
 ## How to play
 
 Guess the word is a pretty simple game. It starts off by welcoming the player and asks if they are ready to play.
@@ -21,34 +20,45 @@ The game ends either if the player guesses the word and beats the game or the pl
 
 The player then has the option of playing again.
 
-// Input screenshot of the start of the game
 
 ## Features
 
-* Random word is generated as underscores.
+* The random word is generated after the player has guessed their first letter. If the player is correct the letter will show with in the underscores. As you can see in the first image. 
 
-// Input screen shot of random word
+![Correct Guess](assets/images/random_correct.png)
 
-* Life tracker shows how lives are remaining.
+The second image shows the word blank as underscores because the player has not found a correct letter.
 
-// Input screenshot of life tracker
+![Letter not found](assets/images/random_word.png)
 
-* Player inputs letter to guess in the word.
 
-// Input screenshot of User input
+* The game tracks what the player has guessed and also how many lives they have remaining. The lives decrease after an incorrect guess and the terminal also shows what letters the player has used.
 
-* Input validation
-    * Shows player which letters they have used.
-    * Shows player if they have chosen the right letter.
-    * Shows player if they have incorrectly input something that isnt a letter.
-    * Shows player if they win with message.
-    * Shows player if they lose with message.
+![Input Tracker](assets/images/input_tracker.png)
 
-// Input multiple screenshots of Input validation
 
-* Play again feature, allows user to have the option of playing again. By pressing Y and enter they play again, by pressing N the game stops.
+* Input validation comes with a few messages depending on what the player has been inputted.
 
-// Input screenshot of play again
+    * The first image shows that the player has input the incorrect letter
+
+![Validation 1](assets/images/input_val1.png)
+
+    * The second image shows that the player put a number instead of a letter and shows a message of invalid input.
+
+![Validation 2](assets/images/input_val2.png)
+    
+    * The next image shows the validation that the player has won the game.
+
+![You Won](assets/images/you_won.png)
+
+    * The last image shows validation that the player has unfortunately lost the game.
+
+![Game Over](assets/images/game_over.png)
+
+
+* The last feature allows the player to play again feature, allows user to have the option of playing again. Depending on what the player would like to choose.
+
+![Play Again](assets/images/play_again.png)
 
 ## Data Model
 
@@ -59,23 +69,21 @@ The player then has the option of playing again.
 
 I have passed the code through a [PEP8 validator](http://pep8online.com/) and there are no problems.
 
-// Input Screenshot of PEP8 Validator
+![PEP 8](assets/images/pep8.png)
 
-Tested the code within local terminal 
+I have done numerous tests on the code within local terminal of GitHub. 
 
-// Input Screenshot of local terminal
+![Local Terminal](assets/images/local_terminal.png)
 
-The code works within the termonal app in Heroku
-
-// Input Screenshot of heroku app terminal
 
 ## Deployment
 
 This project was deployed using the Code Institutes mock terminal within Heroku.
 
-* Deployment steps:
-    * Used a cloned template for the repository
-    * Created a new Heroku app
-    * Set the buildpacks to Python and then Node.js in that order
-    * Linked the Heroku app to my version of the cloned template
-    * Clicked deploy
+* Deployment of  the Heroku App steps:
+    * Used a cloned template for the repository from Code Institute
+    * Created a new Heroku app by setting up a free account, making sure that when you set up your account that you select the correct region of where you are.
+    * Once you have set up your account you are then ready to creat your app. Find the create new app button and click to move forward. Create the name of the app and remember to select the right region of where you live.
+    * Once on the newly created app, find the deploy tab and link your reposiory profile, in this case using GitHub. 
+    * Once your repository is linked and you have found the code you want to use. You can either manualy deploy every time you push your code to your repository you have to come back to heroku to redeploy the app or you can automatically update so that everytime you push your code, it also updates the heroku app aswell.
+    * Once you have done those steps you are ready to use your new app.
