@@ -62,6 +62,9 @@ The second image shows the word blank as underscores because the player has not 
 
 ## Data Model
 
+In the guess the word repository i have imported another python file that hold all the words that the run.py file randomly selects for each game.
+
+I have also imported random.py and string.py that is prebuilt within python, this is to help with the structure of the python code.
 
 
 
