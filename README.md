@@ -90,3 +90,13 @@ This project was deployed using the Code Institutes mock terminal within Heroku.
     * Once on the newly created app, find the deploy tab and link your reposiory profile, in this case using GitHub. 
     * Once your repository is linked and you have found the code you want to use. You can either manualy deploy every time you push your code to your repository you have to come back to heroku to redeploy the app or you can automatically update so that everytime you push your code, it also updates the heroku app aswell.
     * Once you have done those steps you are ready to use your new app.
+
+
+## Credits
+
+* I would like to give credit to the Code Institute slack channel for ideas and support towards this project.
+
+* Also there were two youtube videos that helped inspire me to write this project. Getting an understanding of what a hangman type game could look like and then creating my own version of what my guess the word game looks like. 
+
+[Hangman Tutorial 1](https://www.youtube.com/watch?v=m4nEnsavl6w)
+[Hangman Tutorial 2](https://www.youtube.com/watch?v=JNXmCOumNw0)
