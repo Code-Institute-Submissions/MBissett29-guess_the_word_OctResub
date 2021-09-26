@@ -81,7 +81,7 @@ I have done numerous tests on the code within local terminal of GitHub.
 
 ## Deployment
 
-This project was deployed using the Code Institutes mock terminal within Heroku.
+This python project was created within GitHub and was deployed using the Code Institutes mock terminal through creating a Heroku web application.
 
 * Deployment of  the Heroku App steps:
     * Used a cloned template for the repository from Code Institute
