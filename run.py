@@ -12,14 +12,21 @@ import string
 def pull_the_word(guess_word_list):
 
     """
-    Gets the word from the list randomly
+    Gets the word from the words.py file and randomly
+    selects a word for player to guess
     """
     word = random.choice(guess_word_list)
     return word.upper()
 
 
 def get_user_letter_input():
-    
+
+    """
+    This is the main game function where the player
+    inputs a letter and the code checks to see if it
+    is correct or not. Then tracks the life counter.
+    """
+
     word = pull_the_word(guess_word_list)
     letters_in_word = set(word)
     alphabet = set(string.ascii_uppercase)
@@ -32,7 +39,7 @@ def get_user_letter_input():
         '''
         print("\nYou have", lives, "lives remaining")
         print("You have used these letters ", " ".join(used_letters))
-        
+
 
         user_letter = input("Guess a letter: ").upper()
         if user_letter in alphabet - used_letters:
@@ -58,6 +65,11 @@ def get_user_letter_input():
 
 
 def check_lives(lives):
+    """
+    Checks the players lives remaining and then when lives 
+    hit zero or player guesses correctly they get to have 
+    the option to play again.
+    """
 
     if lives == 0:
         print("Game over! Better luck next time.")
@@ -67,6 +79,12 @@ def check_lives(lives):
         play_again()
 
 def play_again():
+    """
+    The play again option allows the player to make a decision
+    if they want to play or not. The code asks for input of either
+    Y or any other key.
+    """
+
     print("\nPlay Again?")
     print("Enter Y or hit the Run Program button above.")
     print("Or hit any other key to stop")
@@ -81,11 +99,15 @@ def play_again():
         print("Thank you for playing Guess the Word!")
 
 def main():
+    """
+    Main function that introduces the game and runs
+    the game.
+    """
     print("* * * * * * * * * * * * *")
     print("Lets play guess the word!!")
     print("Are you ready?")
     print("* * * * * * * * * * * * *")
-    
+
     get_user_letter_input()
 
 main()
