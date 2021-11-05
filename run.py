@@ -40,7 +40,6 @@ def get_user_letter_input():
         print("\nYou have", lives, "lives remaining")
         print("You have used these letters ", " ".join(used_letters))
 
-
         user_letter = input("Guess a letter: ").upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -60,14 +59,13 @@ def get_user_letter_input():
         else:
             print("Invalid character please use a letter")
 
-
     check_lives(lives)
 
 
 def check_lives(lives):
     """
-    Checks the players lives remaining and then when lives 
-    hit zero or player guesses correctly they get to have 
+    Checks the players lives remaining and then when lives
+    hit zero or player guesses correctly they get to have
     the option to play again.
     """
 
@@ -77,6 +75,7 @@ def check_lives(lives):
     else:
         print("Congratulations you won!!!")
         play_again()
+
 
 def play_again():
     """
@@ -97,6 +96,7 @@ def play_again():
         get_user_letter_input()
     else:
         print("Thank you for playing Guess the Word!")
+
 
 def main():
     """
