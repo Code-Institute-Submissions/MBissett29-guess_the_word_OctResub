@@ -64,9 +64,9 @@ The second image shows the word blank as underscores because the player has not 
 
 ## Data Model
 
-In the guess the word repository i have imported another python file that hold all the words that the run.py file randomly selects for each game.
+In the guess the word repository I have imported another python file that was seperate to reduce the lines of code. This words.py file was create to hold all the words for the game that the run.py file randomly selects with in the code for each time the game is played.
 
-I have also imported random.py and string.py that is prebuilt within python, this is to help with the structure of the python code.
+I have also imported random.py and string.py that is a prebuilt library within python, this is to help with the functionality and running of the code. The random.py file uses a prebuilt code that randomly selects code when the use of the word random is used in the run.py file. The string.py file helps define the code when a string is used, as you can see ascii.uppercase is used in the run.py file to help the letters not be locale dependant.
 
 
 
