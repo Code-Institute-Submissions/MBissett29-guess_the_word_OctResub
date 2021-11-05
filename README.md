@@ -91,7 +91,10 @@ This python project was created within GitHub and was deployed using the Code In
     * Once you have set up your account you are then ready to creat your app. Find the create new app button and click to move forward. Create the name of the app and remember to select the right region of where you live.
     * Once on the newly created app, find the deploy tab and link your reposiory profile, in this case using GitHub. 
     * Once your repository is linked and you have found the code you want to use. You can either manualy deploy every time you push your code to your repository you have to come back to heroku to redeploy the app or you can automatically update so that everytime you push your code, it also updates the heroku app aswell.
-    * Once you have done those steps you are ready to use your new app.
+    * The next step of the process is to select the setting tabs of the app and make sure that you add the right config vars for your application in this case as I am not using any API's I just used a PORT 8000.
+    * Another step you must take is to apply your buildpacks to the heroku app, you can do this under the settings tab also and select which buildpacks you will be using. For this project I installed heroku/python and heroku/nodejs. You need to make sure they are in the specific order as buildpacks are the scripts you use to run the app. 
+    * Once you have done those steps you are ready to deploy the app which will either manually update or autmoatically update when you change updates to your code in GitHub.
+    * Once deployed Heroku will create a link to a page where the app will be displayed, which the user then can interact however they choose.
 
 
 ## Credits
